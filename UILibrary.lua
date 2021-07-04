@@ -1943,6 +1943,7 @@ function library:CreateWindow(csize, cpos)
 
 	return window
 end
+--[[
 game:GetService("UserInputService").InputChanged:connect(function(input)
 	pcall(function()
 	local MousePosition = UserInputService:GetMouseLocation()
@@ -1957,6 +1958,7 @@ game:GetService("UserInputService").InputChanged:connect(function(input)
 	end
 	end)
 end)
+--]]
 local function GetConfigs()
 	cfgs = {}
 	for i,v in pairs(syn_io_listdir("hexhub")) do
