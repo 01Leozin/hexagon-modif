@@ -1,4 +1,3 @@
--- Hexagon UI Library
 local TweenService, RunService, UserInputService,gui,dragging,dragInput,dragStart,startPos,cpt,cpf,cppicking,cppickingVal,cppickingAlpha,cphue,cpsat,cpval,focused,highest,focusedBox = game:GetService("TweenService"),game:GetService("RunService"), game:GetService("UserInputService")
 local cpalpha = 0
 
@@ -155,10 +154,10 @@ local library = {
 	windows = {},
     pointers = {},
     settings = {
-        guiname = "Hexagon",
+        guiname = "Divinity",
 		title = "Divinity - leozin#1337",
 		logo = "rbxassetid://4350178803", -- "http://www.roblox.com/asset/?id=6597976562",
-        footer = "do you know who is leo? the guy who fucked you.",
+        footer = "do you know who is leo? the guy who eat you.",
         modal = true,
         font = Enum.Font.SourceSans,
         textsize = 16,
@@ -1944,7 +1943,6 @@ function library:CreateWindow(csize, cpos)
 
 	return window
 end
---[[
 game:GetService("UserInputService").InputChanged:connect(function(input)
 	pcall(function()
 	local MousePosition = UserInputService:GetMouseLocation()
@@ -1959,7 +1957,6 @@ game:GetService("UserInputService").InputChanged:connect(function(input)
 	end
 	end)
 end)
---]]
 local function GetConfigs()
 	cfgs = {}
 	for i,v in pairs(syn_io_listdir("hexhub")) do
