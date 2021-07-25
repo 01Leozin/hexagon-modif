@@ -473,7 +473,7 @@ function library:CreateWindow(csize, cpos)
 	local spectators = {}
 
 	spectators.main = library:create("TextButton", {
-		Position = UDim2.new(0,2,0,273),
+		Position = UDim2.new(0,694,0,-30),
 		Size = UDim2.new(0,200,0,40),
 		BackgroundColor3 = self.theme.main,
 		BorderColor3 = self.theme.outline,
